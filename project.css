@@ -1,0 +1,48 @@
+body {
+ background-image: url("https://www.pme-web.com/wp-content/uploads/bfi_thumb/Outils-gratuits-gestion-de-ta%CC%82ches-njs708sg1a7skvxwv6ybc8xzrr67z7jncw5i8q3qxk.png");
+ min-height: 100px;
+ background-size: cover;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+.box{
+	margin: auto;
+	padding:10px;
+}
+
+.txt{
+	width:100%;
+	border:none;
+	border-bottom: 2px solid #000;
+	background: none;
+	padding: 10px;
+	outline: none;
+	font-size: 15px;
+}
+
+h3{
+	margin: 10px 0;
+}
+
+.task{
+	width: 100%;
+	background: rgba(255,255,255,0.5);
+	padding: 18px;
+	margin: 6px 0;
+	overflow: hidden;
+}
+
+.task em{
+	float: right;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+
+

@@ -3,22 +3,29 @@
 	<head>
 		<meta charset="utf-8">
   	<title>Make ToDoList</title>
+  	<!-- link html to css -->
   	<link rel="stylesheet" href="project.css">
+  	<!-- link font awesome cdn with css -->
   	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  	<!-- library of JQuery -->
   	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<!-- link html to javascript -->
   	<script type="text/javascript" src="project.js"></script>
 	</head>
 		<body>
 
 
 			<div class = "box">
+				<!-- how to create an input -->
 				<input type = "text" class = "txt" placeholder="add a task">
 				<div class = "Ncompleted">
 					<h3>Not Completed</h3>
 					
 					<div class="task">
 						task
+						<!-- how to create an icon of trash with the link font awesome -->
 						<em class="fas fa-trash-alt"></em>
+						<!-- how to create an icon of check with the link font awesome  -->
 						<em class="fas fa-check"></em>
 					</div>
 
@@ -27,6 +34,20 @@
 						<em class="fas fa-trash-alt"></em>
 						<em class="fas fa-check"></em>
 					</div>
+				</div>
+				<!-- fin of first div Ncompleted -->
+				<!-- start of div completed -->
+				<div class="Completed">
+					<h3>completed</h3>
+
+					<div class="task">
+						task
+						<!-- we need just the trash  -->
+						<em class="fas fa-trash-alt"></em>
+					</div>
+					<!-- fin div completed -->
+				</div>
+			</div>
 
 
 

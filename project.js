@@ -18,7 +18,6 @@ var text;
  				}
 $(document).ready(function() {  
 	$('#delete').click(function() { //when you press on the button the list is cleared
-   	console.log('done')
             $('.Completed').html('')
             localStorage.clear();  
             $('.Completed').hide()   

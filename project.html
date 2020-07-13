@@ -9,47 +9,21 @@
   	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
   	<!-- library of JQuery -->
   	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  	<!-- link html to javascript -->
   	<script type="text/javascript" src="project.js"></script>
 	</head>
-		<body>
 
+	<body>
+		<h1>TO DO LIST</h1>
+			
+			<ul id = "list">
 
-			<div class = "box">
-				<!-- how to create an input -->
-				<input type = "text" class = "txt" placeholder="add a task">
-				<div class = "Ncompleted">
-					<h3>Not Completed</h3>
-					
-					<div class="task">
-						task
-						<!-- how to create an icon of trash with the link font awesome -->
-						<em class="fas fa-trash-alt"></em>
-						<!-- how to create an icon of check with the link font awesome  -->
-						<em class="fas fa-check"></em>
-					</div>
+	
+			</ul>
+			<input type = "text" id = "input" placeholder="add a task" ><button id="add" type="button">press enter to add</button>
+			<div class = "Completed">
+			<h3 id = "Completed">Completed</h3>
 
-					<div class="task">
-						task
-						<em class="fas fa-trash-alt"></em>
-						<em class="fas fa-check"></em>
-					</div>
-				</div>
-				<!-- fin of first div Ncompleted -->
-				<!-- start of div completed -->
-				<div class="Completed">
-					<h3>completed</h3>
-
-					<div class="task">
-						task
-						<!-- we need just the trash  -->
-						<em class="fas fa-trash-alt"></em>
-					</div>
-					<!-- fin div completed -->
-				</div>
 			</div>
-
-
-
-		</body>
-</html>
+		
+	</body>
+	</html>

@@ -1,5 +1,5 @@
 body {
- background-image: url("https://www.pme-web.com/wp-content/uploads/bfi_thumb/Outils-gratuits-gestion-de-ta%CC%82ches-njs708sg1a7skvxwv6ybc8xzrr67z7jncw5i8q3qxk.png");
+ background-image: url("https://c8.alamy.com/comp/T6Y394/empty-to-do-list-and-pen-on-textured-background-T6Y394.jpg");
  min-height: 100px;
  background-size: cover;
 }
@@ -12,7 +12,7 @@ body {
 }
 
 #input{
-	width:90%;
+	width:50%;
 	border:none;
 	border-bottom: 2px solid #000;
 	background: none;
@@ -24,6 +24,23 @@ body {
 h1{
 	margin: 10px 0;
 }
+
+.Completed {
+	margin-top: 2%;
+	border: solid black 1px;
+	background-color: white;
+	width: 50%;
+}
+
+#delete {
+	margin-top: 2%;
+	color: red
+}
+
+#Completed {
+	margin-top: 2%
+}
+
 
 
 

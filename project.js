@@ -1,44 +1,53 @@
 var text;
 				var todos = [];
-				 function addList(){
+				 function addList(){//when you press on the button the data is added to list 
 				 	text = $("#input").val();
-				 	todos = [];
  					if(text.length>0){
- 						$(".Completed").append("<li>"+text+"</li>")
+ 						$(".Completed").append("<h3><li>"+text+"</li></h3>")
+ 					
+ 						var todo = {
+                todo: $('li').last().text()  // get value only of the last li added into the local storage
+            }
+            todos.push(todo);
+            localStorage.setItem('todos', JSON.stringify(todos))
+
  					$("#input").val(""); 
  					}
  					$('#input').val("");
  					
  				}
+$(document).ready(function() {  
+	$('#delete').click(function() { //when you press on the button the list is cleared
+   	console.log('done')
+            $('.Completed').html('')
+            localStorage.clear();  
+            $('.Completed').hide()   
+            todos = []                
+ 
+        })  
+})
+ 				      
 
  $(document).ready(function(){
-  $("#add").on("click",addList);
+  $("#add").on("click",addList);// when you press the button add the data is aded to the list 
     });
 
-
-
-// local storage
-//saving data
-
-function makeCounter() {
-  var count = 0;
-  return function() {
-    var t = count;
-    count = count + 1;
-    return t;
-  };
+if(localStorage.getItem('todos')) {
+	todos = JSON.parse(localStorage.getItem('todos'))//get the item from the local storage 
+} else {
+	todos = []
 }
 
-var generateID = makeCounter();
+document.addEventListener('DOMContentLoaded', function reload (){// when your refresh the page the data is still there
+           for(var i=0;i<todos.length;i++){
+	 $('.Completed').append('<h3><li>' +todos[i]["todo"] + '</li></h3>')
 
-todos.push({text:text,complete:false, id: generateID()});
-localStorage.setItem("todos",JSON.stringify(todos));
+}
+        });
 
 
-for(var i=0;i<todos.length;i++){
-	 $('.Completed').append('<div><h3>' +todos[i]["todo"] + '</h3></div>')
-	 var todo = localStorage.getItem(JSON.parse(todos));
-            }
+
+
 
 
 

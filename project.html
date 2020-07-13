@@ -9,21 +9,32 @@
   	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
   	<!-- library of JQuery -->
   	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<!-- link from htmal to javascript -->
   	<script type="text/javascript" src="project.js"></script>
 	</head>
 
 	<body>
-		<h1>TO DO LIST</h1>
+		<center><h1 id="title">TO DO LIST</h1></center>
 			
-			<ul id = "list">
+			
 
 	
-			</ul>
-			<input type = "text" id = "input" placeholder="add a task" ><button id="add" type="button">press enter to add</button>
+			
+			<center><input type = "text" id = "input" placeholder="add a task" ><button id="add" type="button"><i class="fas fa-plus-square">Add</i></button></center>
+			
+			<center><h3 id = "Completed">Completed</h3>
 			<div class = "Completed">
-			<h3 id = "Completed">Completed</h3>
+
 
 			</div>
+			<div id = "list">
+				<ul ></ul>
+			</div>
+
+			 <div class='footer'>
+        <button id="delete"><i class="fas fa-trash-alt"></i></button>
+        <p>Click to delete the list</p>
+    </div></center>
 		
 	</body>
 	</html>
